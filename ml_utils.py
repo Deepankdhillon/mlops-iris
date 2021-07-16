@@ -2,9 +2,12 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
+from sklearn.tree import DecisionTreeClassifier
+
 
 # define a Gaussain NB classifier
-clf = GaussianNB()
+#clf = GaussianNB()
+clf = DecisionTreeClassifier()
 
 # define the class encodings and reverse encodings
 classes = {0: "Iris Setosa", 1: "Iris Versicolour", 2: "Iris Virginica"}
